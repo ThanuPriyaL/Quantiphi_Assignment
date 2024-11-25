@@ -1,38 +1,602 @@
-.App {
+body {
+  margin-left:  2rem;
+  margin-right: 2rem;
+  font-family: sans-serif;
+  background: url(./images/background.svg) no-repeat top right;
+  background-color: #FFFFFF;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn.heading-btn { background: #ff9800; }
+
+/* Navbar */
+.navbar {
+
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 24rem;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.logo-image {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.navbar-links li {
+  display: inline; 
+}
+
+.navbar-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff6b6b;
+}
+.signupButton {
+  border: 1px solid black;
+  background-color: transparent;
+  padding: 5px 10px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.language-selector {
+  background-color: transparent;
+  border: none;
+  /* padding: 0.5rem;
+  font-size: 1rem; */
+  cursor: pointer;
+}
+
+.heading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: auto;
+
+}
+
+.heading-text {
+  flex: 1;
+  padding-top: 10%;
+  align-items: left;
+  text-align: left;
+}
+
+.heading-image {
+  flex: 1;
+  text-align: left;
+}
+
+.heading-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.heading-btn {
+  padding: 0.8rem 1.5rem;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.headLine1 {
+font-family:popins;
+font-size: 18pX;
+font-weight: 700;
+text-align: left;
+color: #DF6951;
+}
+.headLine2 {
+font-family: Volkhov;
+font-size: 65px;
+font-weight: 700;
+letter-spacing: -0.04em;
+text-align: left;
+color: #181E4B;
+margin: 0px;
+}
+.headLine3 {
+  font-family: Poppins;
+font-size: 16px;
+font-weight: 500;
+line-height: 30px;
+text-align: left;
+color: #5E6282;
+}
+.button-heading{
+  display: flex;
+  align-items: center; 
+  justify-content: space-around; 
+  padding: 10px;
+}
+.playButton{
+  color: #686D77;
+  font-family: Poppins;
+font-size: 17px;
+font-weight: 500;
+line-height: 25.5px;
+text-align: left;
+
+}
+.services-section {
+  padding-top: 6rem;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.services-two-columns {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items:flex-start;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.text-column {
+  flex: 1;
+  padding-right: 1rem;
+}
+
+.image-column {
+  display: flex;
+  justify-content: flex-end; 
+}
+
+.background-image {
+  width: 100%;
+  height: auto;
+}
+
+.services-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: nowrap; 
+  margin-top: 2rem;
+}
+
+.service-card {
+  width: 23%;
+  padding: 1rem;
+  border-radius: 8px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  opacity: 1;
+}
+
+.service-image {
+  width:100px;
+  height: 100px;
+  margin-bottom: 1rem;
+align-items: center;
+}
+
+
+.service-content h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.service-content p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Apply this to the second card */
+.service-card:nth-child(2) {
+  position: relative;
+  z-index: 5; /* Ensure the card is above the background */
+}
+
+/* Background image will be behind the card */
+.service-card:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  bottom: -30px; /* Position the image towards the bottom of the card */
+  left: -30px; /* Position the image towards the left of the card */
+  width: 100px; /* Width of the background image */
+  height: 100px; /* Height of the background image */
+  background-image: url(./images/servicesBackgroundCard.svg); /* Your background image */
+  background-size: contain; /* Ensure the image scales properly */
+  background-repeat: no-repeat;
+  background-position: bottom left; /* Position the image at the bottom left */
+  z-index: -1; /* Ensure it's behind the card */
+}
+
+
+
+
+
+
+.category {
+font-family: Poppins;
+font-size: 18px;
+font-weight: 600;
+color: #5E6282;
+display: flex;
+justify-content: center; 
+
+}
+.categoryHeadLine{
+  font-family: Volkhov;
+font-size: 50px;
+font-weight: 700;
+text-align: center;
+color: #14183E;
+margin: 0px;
+display: flex;
+justify-content:center; 
+}
+
+/* Destinations Section */
+.destinations-section {
+  padding: 4rem 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.destinations-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.destination-card img {
+  width: 100%;
+  border-radius: 5px 5px 0 0;
 }
+
+.destination-info {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.8); 
+}
+.category-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+.destination-image{
+  width:315px;
+  height: 475px;
+align-items: center;
+}
+
+/* Add this to your existing CSS */
+
+.third-card {
+  position: relative;
+}
+
+.third-card .destination-image {
+  position: relative;
+  z-index: 1;
+}
+
+.third-card::before {
+  content: "";
+  position: absolute;
+  top: 40%;
+  right: 0; 
+  width: 96px; 
+  height: 230px;
+  background-image: url(./images/destinationBackground.svg); 
+  background-size: cover; 
+  background-position: center;
+  z-index: 0;
+  transform: translateY(-50%); 
+}
+
+
+/* Booking Section */
+.booking-section {
+ 
+  text-align: center;
+  color: black;
+}
+
+.booking-steps {
+  margin-bottom: 2rem;
+}
+
+.booking-step {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  margin-top: 2rem;
+  text-align: start;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.step-icon {
+margin-top: 1rem;
+width: 42px;
+height: 42px;
+}
+.booking-title{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  margin: 0px;
+color:#5E6282;
+
+}
+.booking-description{
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  color:#5E6282;
+  margin: 0px;
+
+}
+.booking-details{
+  margin-top: 1rem;
+}
+.booking-Img{
+  align-items: flex-start;
+}
+.search-container {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 20%;
+}
+.booking-two-columns {
+  display: flex;
+  align-items:flex-start;
+  justify-content: space-between;
+}
+
+/* Search */
+.search-container {
+  position: relative;
+  width: 100%; 
+  max-width: 100%;
+}
+
+.search-input-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 25px;
+  padding: 10px 15px;
+  background-color: #fff;
+  max-width: 100%; 
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.suggestions-list {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 1000;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+}
+
+.suggestions-list.show {
+  display: block;
+}
+
+.suggestion-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
+.option-icon {
+  width: 20px;
+  height: 20px;
+  color: #666;
+  margin-left: auto;
+}
+
+.suggestion-info p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Footer styles */
+.footer {
+  color: #333;
+  padding: 40px 20px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 150px;
+}
+.logo-section{
+  margin-top: 15%;
+}
+
+.logo-title{
+  display: flex;
+  justify-content:left;
+}
+.title {
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.5rem;
+  margin: 6px;
+}
+.footer-deatils{
+  font-family: Poppins;
+font-size: 13px;
+font-weight: 500;
+color: #5E6282;
+text-align: left;
+
+}
+.footer-logo {
+  width: 38;
+  height: 38;
+}
+
+.footer-column h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #000;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #6c6c6c;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li:hover {
+  color: #000;
+}
+
+.social-media {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+
+}
+
+.social-icon {
+  /* width: 30px;
+  height: 30px; */
+  width: 100%;
+  height: 100%;
+  fill: #6c6c6c;
+  cursor: pointer;
+  transition: fill 0.3s ease;
+}
+
+.social-icon:hover {
+  fill: #000;
+}
+
+.app-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.app-icons img {
+  width: 120px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.app-icons img:hover {
+  transform: scale(1.05);
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 5rem;
+  color: #6c6c6c;
+  font-size: 12px;
+}
+
+
+

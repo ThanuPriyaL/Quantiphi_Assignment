@@ -1,0 +1,284 @@
+{
+    "destinations": [
+      {
+        "id": 1,
+        "name": "Paris",
+        "country": "France",
+        "city": "Paris",
+        "attractions": [
+          "Eiffel Tower",
+          "Louvre Museum",
+          "Notre-Dame Cathedral",
+          "Montmartre"
+        ],
+        "best_season": "Spring (March to May)",
+        "image": "https://example.com/images/paris.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Kyoto",
+        "country": "Japan",
+        "city": "Kyoto",
+        "attractions": [
+          "Fushimi Inari Shrine",
+          "Kinkaku-ji (Golden Pavilion)",
+          "Arashiyama Bamboo Grove",
+          "Gion District"
+        ],
+        "best_season": "Autumn (September to November)",
+        "image": "https://example.com/images/kyoto.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Sydney",
+        "country": "Australia",
+        "city": "Sydney",
+        "attractions": [
+          "Sydney Opera House",
+          "Bondi Beach",
+          "Sydney Harbour Bridge",
+          "Royal Botanic Garden"
+        ],
+        "best_season": "Spring (September to November)",
+        "image": "https://example.com/images/sydney.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Machu Picchu",
+        "country": "Peru",
+        "city": "Cusco",
+        "attractions": [
+          "Machu Picchu Citadel",
+          "Sacred Valley",
+          "Inca Trail",
+          "Intihuatana Stone"
+        ],
+        "best_season": "May to September (Dry season)",
+        "image": "https://example.com/images/machu-picchu.jpg"
+      },
+      {
+        "id": 5,
+        "name": "New York City",
+        "country": "United States",
+        "city": "New York",
+        "attractions": [
+          "Statue of Liberty",
+          "Central Park",
+          "Times Square",
+          "Empire State Building"
+        ],
+        "best_season": "Autumn (September to November)",
+        "image": "https://example.com/images/new-york.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Cape Town",
+        "country": "South Africa",
+        "city": "Cape Town",
+        "attractions": [
+          "Table Mountain",
+          "Robben Island",
+          "Kirstenbosch Gardens",
+          "Cape of Good Hope"
+        ],
+        "best_season": "Summer (December to February)",
+        "image": "https://example.com/images/cape-town.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Dubai",
+        "country": "United Arab Emirates",
+        "city": "Dubai",
+        "attractions": [
+          "Burj Khalifa",
+          "Palm Jumeirah",
+          "Dubai Mall",
+          "Dubai Desert Safari"
+        ],
+        "best_season": "Winter (November to March)",
+        "image": "https://example.com/images/dubai.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Rome",
+        "country": "Italy",
+        "city": "Rome",
+        "attractions": [
+          "Colosseum",
+          "Vatican City",
+          "Pantheon",
+          "Roman Forum"
+        ],
+        "best_season": "Spring (April to June)",
+        "image": "https://example.com/images/rome.jpg"
+      },
+      {
+        "id": 9,
+        "name": "Bali",
+        "country": "Indonesia",
+        "city": "Denpasar",
+        "attractions": [
+          "Uluwatu Temple",
+          "Sacred Monkey Forest Sanctuary",
+          "Kuta Beach",
+          "Mount Batur"
+        ],
+        "best_season": "April to October (Dry season)",
+        "image": "https://example.com/images/bali.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Santorini",
+        "country": "Greece",
+        "city": "Thira",
+        "attractions": [
+          "Oia Village",
+          "Fira",
+          "Akrotiri",
+          "Santorini Caldera"
+        ],
+        "best_season": "Late Spring to Early Fall (May to October)",
+        "image": "https://example.com/images/santorini.jpg"
+      },
+      {
+        "id": 11,
+        "name": "London",
+        "country": "United Kingdom",
+        "city": "London",
+        "attractions": [
+          "Buckingham Palace",
+          "British Museum",
+          "Tower of London",
+          "Big Ben"
+        ],
+        "best_season": "Summer (June to August)",
+        "image": "https://example.com/images/london.jpg"
+      },
+      {
+        "id": 12,
+        "name": "Rio de Janeiro",
+        "country": "Brazil",
+        "city": "Rio de Janeiro",
+        "attractions": [
+          "Christ the Redeemer",
+          "Sugarloaf Mountain",
+          "Copacabana Beach",
+          "Selarón Steps"
+        ],
+        "best_season": "December to March",
+        "image": "https://example.com/images/rio-de-janeiro.jpg"
+      },
+      {
+        "id": 13,
+        "name": "Barcelona",
+        "country": "Spain",
+        "city": "Barcelona",
+        "attractions": [
+          "Sagrada Familia",
+          "Park Güell",
+          "La Rambla",
+          "Casa Batlló"
+        ],
+        "best_season": "Spring (April to June)",
+        "image": "https://example.com/images/barcelona.jpg"
+      },
+      {
+        "id": 14,
+        "name": "Athens",
+        "country": "Greece",
+        "city": "Athens",
+        "attractions": [
+          "Acropolis",
+          "Parthenon",
+          "Temple of Olympian Zeus",
+          "Ancient Agora"
+        ],
+        "best_season": "Spring and Fall (April to June, September to November)",
+        "image": "https://example.com/images/athens.jpg"
+      },
+      {
+        "id": 15,
+        "name": "Istanbul",
+        "country": "Turkey",
+        "city": "Istanbul",
+        "attractions": [
+          "Hagia Sophia",
+          "Blue Mosque",
+          "Topkapi Palace",
+          "Bosphorus Strait"
+        ],
+        "best_season": "Spring (April to June)",
+        "image": "https://example.com/images/istanbul.jpg"
+      },
+      {
+        "id": 16,
+        "name": "Amsterdam",
+        "country": "Netherlands",
+        "city": "Amsterdam",
+        "attractions": [
+          "Anne Frank House",
+          "Rijksmuseum",
+          "Van Gogh Museum",
+          "Canal Cruise"
+        ],
+        "best_season": "Spring (April to May)",
+        "image": "https://example.com/images/amsterdam.jpg"
+      },
+      {
+        "id": 17,
+        "name": "Queenstown",
+        "country": "New Zealand",
+        "city": "Queenstown",
+        "attractions": [
+          "Lake Wakatipu",
+          "Milford Sound",
+          "Skyline Gondola",
+          "Queenstown Gardens"
+        ],
+        "best_season": "Winter (June to August)",
+        "image": "https://example.com/images/queenstown.jpg"
+      },
+      {
+        "id": 18,
+        "name": "Banff National Park",
+        "country": "Canada",
+        "city": "Banff",
+        "attractions": [
+          "Lake Louise",
+          "Moraine Lake",
+          "Banff Gondola",
+          "Bow Falls"
+        ],
+        "best_season": "Summer (June to August)",
+        "image": "https://example.com/images/banff.jpg"
+      },
+      {
+        "id": 19,
+        "name": "Cairo",
+        "country": "Egypt",
+        "city": "Cairo",
+        "attractions": [
+          "Pyramids of Giza",
+          "Sphinx",
+          "Egyptian Museum",
+          "Khan el-Khalili Bazaar"
+        ],
+        "best_season": "Winter (November to February)",
+        "image": "https://example.com/images/cairo.jpg"
+      },
+      {
+        "id": 20,
+        "name": "Los Angeles",
+        "country": "United States",
+        "city": "Los Angeles",
+        "attractions": [
+          "Hollywood Walk of Fame",
+          "Griffith Observatory",
+          "Santa Monica Pier",
+          "Venice Beach"
+        ],
+        "best_season": "Spring and Fall (March to May, September to November)",
+        "image": "https://example.com/images/los-angeles.jpg"
+      }
+    ]
+  }
